@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html  ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <body>
+
+    <title>Atkins</title>
+  </head>
+
+  <body ng-controller="ctrl">
+    <!--background-->
+    <video poster="images/background-compressed.png" id="bgvid" playsinline autoplay muted loop>
+    <source src="images/background-compressed.mp4" type="video/mp4">
+    </video>
+
+    <div class="sidenav col-xs-1 affix ">
+      <div class="navbar navbar-default" role="navigation">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">Connected & Autonomous Vehicles <br>></a></li>
+            <li><a href="#">Intelligent Mobility <br>></a></li>
+            <li><a href="#">Digital Railway <br>> </a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+      <div class="col-sm-11 col-sm-offset-1 col-xs-10 col-xs-offset-2">
+        <div class="container">
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <figure class="header">
+              <h1>Connected & Autonomous Vehicles</h1>
+            </figure>
+          </div>
+
+          <div class="col-md-4 hidden-sm hidden-xs">
+              <div class="col-xs-2">
+                <span class="fa-stack fa-lg fa-pull-left">
+                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                  <i class="fa fa-quote-left fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            <div class="col-xs-10 noRightPad">
+              <figure class="quote">
+              <figcaption>
+                <cite>In the future we will all be better connected with not just our cars but all aspects of our journey, how we travel and the mode of transport we use to get us from A to B.</cite>
+                <p>John McCarthy <br>
+                  Technical Director</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="images/s1-img-6-1b.png" title="Independent validation is fundamental to emphasise the capability and safety of any solution in the CAV space." alt="Independent validation is fundamental to emphasise the capability and safety of any solution in the CAV space.">
+                <div class="overlay">
+                  <h2>More</h2>
+            				<p>
+            					<a href="#">LINK</a>
+            				</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+
+            <div class="graph">
+              <div class="pull-left">
+                <img src="images/s1-img-2.png" class="img-responsive cloud">
+              </div>
+                <h3></h3>
+            </div>
+
+              <div class="col-sm-2 hidden-xs">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                  <i class="fa fa-quote-left fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+
+              <div class="col-sm-10 noRightPad">
+                <figure class="quote">
+                  <figcaption>
+                    <cite>Driverless cars are the future. I want the UK to be open-minded and embrace a technology that could transform our roads and open up a brand new route for global investment.</cite>
+                    <p>Claire Perry <br>
+                      Department for Transport</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12 hidden-md hidden-lg hidden-xl">
+              <div class="hovereffect">
+                <img class="img-responsive skillsImg" src="images/s1-img-7-1b.jpg" title="Skills" alt="Skills">
+                <div class="overlay">
+                  <h2>More</h2>
+                    <p>
+                      <a href="#">LINK</a>
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+          <div class="text-center col-md-4 col-sm-12 col-xs-12 ">
+            <div class="col-sm-6 col-xs-12">
+              <div class="set-size charts-container">
+                <div class="pie-wrapper progress-14">
+                  <span class="label"><div class="bounce" ng-model="row[$index]">
+                    {{data[0]}}%</div>
+                    <span class="smaller">of men do not hold <br>a full drivers licence</span></span>
+                  <div class="pie">
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                  </div>
+                </div>
+              </div>
+                <div class="hovereffect">
+                  <img class="img-responsive" src="images/s1-img-4-1.png" title="How many lives can we save by 2030?" alt="How many lives can we save by 2030?">
+                  <div class="overlay">
+                    <h2>More</h2>
+                      <p>
+                        <a href="#">LINK</a>
+                      </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-xs-12">
+                <div class="set-size charts-container">
+                <div class="pie-wrapper progress-31">
+                  <span class="label"><div class="bounce" ng-model="row[$index]">
+                    {{data[1]}}%</div>
+                    <span class="smaller">of women do not hold <br>a full drivers licence</span></span>
+                  <div class="pie">
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                  </div>
+                </div>
+                </div>
+                <div class="hovereffect">
+                  <img class="img-responsive" src="images/s1-img-5-1.png" title="What percentageof road accidents involve driver error?" alt="What percentageof road accidents involve driver error?">
+                  <div class="overlay">
+                    <h2>More</h2>
+                      <p>
+                        <a href="#">LINK</a>
+                      </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 hidden-xs hidden-sm">
+            <div class="hovereffect">
+              <img class="img-responsive skillsImg" src="images/s1-img-7-1b.jpg" title="Skills" alt="Skills">
+              <div class="overlay">
+                <h2>More</h2>
+                  <p>
+                    <a href="#">LINK</a>
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!--container-->
+    </div>
+
+<!--build:js js/main.min.js -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/typed.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  <!-- endbuild -->
+
+
+  </body>
+  </html>
